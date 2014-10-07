@@ -1,6 +1,7 @@
 angular.module('eatRightApp').
-config(['$routeProvider', 
-  function($routeProvider) {
+config(['$routeProvider', '$locationProvider', 
+  function($routeProvider, $locationProvider) {
+    
     $routeProvider.
       when('/', {
         redirectTo: '/search'
@@ -23,5 +24,7 @@ config(['$routeProvider',
       otherwise({
         redirectTo: '/404'
       });
+    
+    $locationProvider.html5Mode(true);      
   }
 ]);

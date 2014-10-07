@@ -5,6 +5,7 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="lib/angular-material-0.0.3/angular-material.css">
     <title>Eat Right App</title>
+    <base href="<%=request.getContextPath()%>/">
   </head>
   <body ng-app="eatRightApp">
 

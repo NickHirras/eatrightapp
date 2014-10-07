@@ -1,6 +1,9 @@
-<div style="padding: 0.5em;">
-<material-input-group ng-disabled="isDisabled">  
-  <label for="t1">Search</label>
-  <material-input id="t1" type="search" ng-model="someText"></material-input>
-</material-input-group>
-  </div>
+<material-card layout="horizontal">
+  <material-input-group layout-fill>  
+    <label for="q">Search</label>
+    <material-input id="q" type="search" ng-model="query"></material-input>
+  </material-input-group>  
+  <material-button class="material-button-raised">
+    <material-icon icon="lib/icons/ic_search_24dp.png"></material-icon>
+  </material-button>
+</material-card>
